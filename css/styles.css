@@ -1,0 +1,159 @@
+/* FONT FROM GOOGLE FONT - PTSANS */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400;500&display=swap');
+
+    /* COLORS TO BE USED */
+    /* color: #302e4d;
+    color: #504e70;
+    color: #e1ad01;
+    color: #ffffff; */
+
+/* UNIVERSAL SELECTOR */
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Crimson+Pro", "Vidaloka", "PT+Sans";
+    font-weight: lighter;
+}
+
+/* LANDING PAGE BEGINS*/
+.landing{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-img .landing-image-container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.landing .landing-img{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url("/images/CHII4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    animation: change 30s infinite;
+}
+
+@keyframes change{
+    0%{
+        background-image: url("/images/music-harirak-dBdxW36Mxd8-unsplash.jpg");
+    }
+    20%{
+        background-image: url("/images/music-santos-fCEJGBzAkrU-unsplash.jpg");
+    }
+    40%{
+        background-image: url("/images/matt-botsford-OKLqGsCT8qs-unsplash.jpg");
+    }
+    60%{
+        background-image: url("/images/musicy-sikkema-p44B3PKChs4-unsplash.jpg");
+    }
+}
+
+.landing-image-container .landing-logo img{
+    top: 2rem;
+    left: 2rem;
+    width: 11%;
+    position: absolute;
+}
+
+.landing-img .landing-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 25%;
+    right: 25%;
+}
+
+.landing-text p{
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.landing-text p .biblical_verse{
+    text-decoration: none;
+    color: #fff;
+}
+
+.landing-img .landing-text .btn{
+    margin-top: 30px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    width: 145px;
+    line-height: 3rem;
+    background-color:#008080;
+    border: 1.5px solid #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: lowercase;
+    /* height: 80px; */
+}
+
+.landing-img .landing-text .btn:hover{
+    background-color: #e1ad01;
+    color: #fff;
+    border: 0px solid #302e4d;
+    width: 155px;
+    transition: all 0.3s ease;
+    line-height: 5.5rem;
+}
+
+.landing-image-container .landing-social{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 3;
+    right: 2rem;
+    height: 100%;
+}
+
+.landing-image-container .landing-social a{
+    margin-top: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-family:"Crimson+Pro", "Vidaloka", "PT+Sans";
+    font-size: 2.5rem;
+}
+
+.landing-image-container .landing-social a:last-child{
+    color: white;
+}
+
+.landing-image-container .landing-social a:nth-child(3){
+    color: white;
+}
+
+.landing-image-container .landing-social a:nth-child(2){
+    color: white;
+}
+
+.landing-image-container .landing-social a:nth-child(1){
+    color: white;
+}
+
+/* LANDING PAGE ENDS*/
